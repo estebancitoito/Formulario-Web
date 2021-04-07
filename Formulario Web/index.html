@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/4e931aa80b.js" crossorigin="anonymous"></script>
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="topBox"></div>
+    <form id="formulario" method="POST">
+        <ul>
+            <li>
+                <!--Grupo Nombre--> 
+                <div class="formularioGrupo" id="grupoNombre">
+                    <label for="nombre" class="formularioLabel">Nombre</label>
+                    <div class="grupoInput">
+                        <input type="text" class="formularioInput" name="nombre" id="nombre" required>
+                    </div>
+                    <p class="mensajeError">En esta casilla solo va el primer nombre.</p>
+                </div>    
+
+                <!--Grupo Apellido--> 
+                <div class="formularioGrupo" id="grupoApellido">
+                    <label for="apellido" class="formularioLabel">Apellido</label>
+                    <div class="grupoInput">
+                        <input type="text" class="formularioInput" name="apellido" id="apellido" required>
+                    </div>
+                    <p class="mensajeError">En esta casilla solo va el primer apellido.</p>
+                </div>  
+
+                <!--Grupo Rut--> 
+                <div class="formularioGrupo" id="grupoRut">
+                    <label for="rut" class="formularioLabel">RUT</label>
+                    <div class="grupoInput">
+                        <input type="text" class="formularioInput" name="rut" id="rut" required>
+                    </div>
+                    <p class="mensajeError">Omita los puntos e incluya el guión</p>
+                </div>    
+
+                <!--Grupo Correo Electrónico--> 
+                <div class="formularioGrupo" id="grupoEmail">
+                    <label for="email" class="formularioLabel">Correo Electrónico</label>
+                    <div class="grupoInput">
+                        <input type="email" class="formularioInput" name="email" id="email" required>
+                    </div>
+                    <p class="mensajeError">El correo electrónico ingresado no es válido</p>
+                </div>  
+
+                <!--Grupo Teléfono--> 
+                <div class="formularioGrupo" id="grupoTelefono">
+                    <label for="telefono" class="formularioLabel">Teléfono</label>
+                    <div class="grupoInput">
+                        <input type="number" class="formularioInput" name="telefono" id="telefono" required>
+                    </div>
+                    <p class="mensajeError">Sólo puede contener 9 dígitos</p>
+                </div>  
+
+                <!--Grupo Lenguaje--> 
+                <div class="formularioGrupo" id="grupoLenguaje">
+                    <label for="lenguaje" class="formularioLabel">Seleccione 1 o más lenguajes de programación de su interés</label>
+                    <div class="grupoInput">
+                        <input type="checkbox" class="formularioInput" name="lenguaje" id="pyhton"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">Python</b><br>
+                        <input type="checkbox" class="formularioInput" name="lenguaje" id="java"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">Java</b> <br>
+                        <input type="checkbox" class="formularioInput" name="lenguaje" id="typsecript"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">TypeScript</b><br>
+                        <input type="checkbox" class="formularioInput" name="lenguaje" id="php"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">PHP</b><br>
+                        <input type="checkbox" class="formularioInput" name="lenguaje" id="csharp"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">C#</b><br>
+                        <input type="checkbox" class="formularioInput" name="lenguaje" id="cplus"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">C++</b>
+                    </div>
+                    <div class="mensajeError">Debe seleccionar al menos uno</div>
+                </div>  
+
+                 <!--Grupo Barra programación--> 
+                <div class="formularioGrupo" id="grupoBarra">
+                    <label for="barra" class="formularioLabel">¿Cuál es su nivel de conocimiento en programación?</label>
+                    <div class="grupoInput">
+                        <input type="range" class="formularioInput" name="barra" id="barra">
+                    </div>
+                </div>  
+
+                <!--Grupo Experiencia Laboral--> 
+                <div class="formularioGrupo" id="grupoExperiencia">
+                    <label for="experiencia" class="formularioLabel">¿Cuantos años de experiencia laboral tiene?</label>
+                    <div class="grupoInput">
+                        <input type="radio" class="formularioInput" name="experiencia" id="1"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">1.</b> 
+                        <input type="radio" class="formularioInput" name="experiencia" id="2"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">2.</b> 
+                        <input type="radio" class="formularioInput" name="experiencia" id="3"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">3.</b> 
+                        <input type="radio" class="formularioInput" name="experiencia" id="4"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">4.</b> 
+                        <input type="radio" class="formularioInput" name="experiencia" id="5"><b style= "color: #BFB5B5; font-family: Arial, Helvetica, sans-serif">5.</b> 
+                    </div>
+                    <p class="mensajeError">Debe seleccionar una opción</p>
+                </div>
+                
+                <!--Grupo Descripción--> 
+                <div class="formularioGrupo" id="grupoDescripcion">
+                    <label for="descripcion" class="formularioLabel">Descripción</label>
+                    <div class="grupoInput">
+                        <textarea class="formularioInput" name="descripcion" id="comentarios" required></textarea>
+                        <p class="mensajeError">Debe escrbir algo en esta casilla.</p>
+                    </div>
+                </div>
+                
+                <!--Mensaje de error-->
+                <div class="formularioMensaje" id="formularioMensaje"><b>Error:</b> Por favor rellene todo el formulario.</p>
+                </div>
+
+                <!--Bottones Enviar y Limpiar-->
+                <div class="formularioGrupo formularioBotones">
+                    <button type="submit" class="formularioEnviar">Enviar</button>
+                    <button type="button" class="formularioLimpiar" id="limpiar">Limpiar</button>
+                    <div class="formularioMensajeExito" id="formularioMensajeExito">¡Tus datos han sido enviados!</div>
+                </div>
+            </li>
+    </form>
+    <div class="bottomBox"></div>
+    <script src="ts/validaciones.js" async defer></script>
+</body>
+</html>

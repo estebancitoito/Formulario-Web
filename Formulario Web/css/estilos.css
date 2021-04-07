@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+    background-color: #1C1515;
+}
+
+ul{
+    list-style-type:none;
+}
+
+fieldset{
+    margin: 5%;
+    background-color: #1C1515;
+}
+
+label{
+    color: #BFB5B5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+.topBox{
+    height: 100px;
+    background-color: #3C3939;
+}
+
+.bottomBox{
+    height: 100px;
+    background-color: #3C3939;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.mensajeError{
+    color: #BFB5B5;
+    font-family: Arial, Helvetica, sans-serif;
+    display:none;
+}
+
+.mensajeErrorActivo{
+    display: block;
+}
+
+.formularioValidacionEstadoLenguaje{
+    position: absolute;
+    top: 32.5%;
+    left: 1%;
+}
+
+.formularioValidacionEstadoExtra{
+    position:absolute;
+    left: 5px;
+}
+
+.formularioValidacionEstado{
+    position: absolute;
+    left: 5px;
+}
+
+.formularioMensaje{
+    color: #BFB5B5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    height: 45px;
+    width: 50%;
+    line-height: 45px;
+    border-radius: 3px;
+    background-color: #D36161;
+    display: none;
+}
+
+.formularioMensajeActivo{
+    display: block;
+}
+
+.formularioValidacionEstado,.formularioValidacionEstadoLenguaje,.formularioValidacionEstadoExtra{
+    display: block;
+}
+
+.grupoInput:focus{
+    position:relative;
+    color: #BFB5B5;
+    outline: none;
+    box-shadow: 3px 0 30px rgba(16,16,16);
+}
+
+.formularioBotones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formularioMensajeExito{
+    color: #BFB5B5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    display: none;
+}
+
+.formularioMensajeExitoActivo{
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
